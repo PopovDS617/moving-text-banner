@@ -9,9 +9,10 @@ const Banner = (props: any) => {
 
     textList.push(
       <text
-        x="5"
-        y={(i += +6)}
-        fontSize={fontSize}
+        key={Math.random() * 50}
+        x="0"
+        y={(i += 6)}
+        fontSize={fontSize + 'px'}
         fontFamily="monospace"
         dominantBaseline="hanging"
       >
@@ -24,8 +25,7 @@ const Banner = (props: any) => {
     <svg
       id="bannerSVG"
       xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-      viewBox="5 15 500 500"
+      viewBox="0 15 200 500"
       preserveAspectRatio="xMinYMid meet"
       fill="currentColor"
       height="100%"

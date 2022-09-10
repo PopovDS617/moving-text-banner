@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Banner from './Banner';
 import './App.css';
 import Header from './Header';
+import Blur from './Blur';
 
 function shuffleArray(arg: string) {
   const array = arg.split('');
@@ -42,8 +43,9 @@ function App() {
 
   return (
     <div className="App">
-      <Banner movingText={text} />
-
+      <Blur>
+        <Banner movingText={text} />
+      </Blur>
       <Header />
     </div>
   );

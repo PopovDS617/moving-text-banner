@@ -100,19 +100,29 @@ body {
 }
 
 .header {
-  width: 35rem;
-  height: 8rem;
+  padding: 1.2rem 2.2rem 1.7rem;
+  max-width: 60rem;
 
-  padding: 2rem;
   background-color: black;
   animation: textShadow 1.6s infinite;
-  font-size: 5rem;
+  font-size: clamp(1em, 2rem + 8vh, 9rem);
   text-align: center;
-  z-index: 25;
+  z-index: 999;
 }
 
 #bannerSVG {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  filter: blur(1px);
 }
